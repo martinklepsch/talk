@@ -14,7 +14,7 @@
   :source-paths ["src"]
 
   :garden {:builds [{;; Optional name of the build.
-                     :id "screen"
+                     ;; :id "screen"
                      ;; The var containing your stylesheet.
                      :stylesheet talk.style/screen
                      ;; Compiler flags passed to `garden.core/css`.
