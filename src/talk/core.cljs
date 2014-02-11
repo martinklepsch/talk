@@ -67,7 +67,7 @@
     (render-state [_ state]
       (dom/div #js {:className "message"}
         (dom/img #js {:className "message__author"
-                      :src       (gravatar (om/get-shared owner))}
+                      :src       (gravatar (om/get-shared owner :email))}
           nil)
         (dom/input #js {:type "text" :ref "new-contact" :value (:text state)})
         (dom/button #js {:onClick #(add-message app owner)} "Send")))))
